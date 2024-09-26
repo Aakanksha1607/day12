@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+//---------------Named function--------------------
+    <script>
+        const number1 =[4,10,15,6,25,8]
+        function lessThan10(element){
+            return element < 10  
+        }
+        function squares(element){
+            if(element > 10){
+            return element *  element
+            }
+        }
+        console.log(number1.filter(lessThan10))
+        console.log(number1.map (squares))   
+    </script>
+//-------------Anonyomous function--------------------
+    <script>
+        const number2= [4,10,15,6,25,8]
+        const lessThan = function(element){
+            return element < 10
+        }
+        const square =  function (element){
+            if(element > 10){
+            return element *   element
+            }
+        }
+        console.log(number1.filter(lessThan))
+        console.log(number1.map (square)) 
+    </script>
+//-------------Arrow function--------------------    
+     <script>
+        const number3=  [ 4,10,15,6,25,8]
+        const lessthan  = element  => element < 10
+        const squar =  element => {if(element > 10) {element* element}}
+        console.log(number1.filter(lessThan))
+        console.log(number1.map (square))
+     </script>
+</body>
+</html>

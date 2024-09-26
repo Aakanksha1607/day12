@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    //---------------Named function--------------------
+    <script>
+         const students = [
+        { name: 'John', marks: 45 },
+        { name: 'Jane', marks: 72 },
+        { name: 'Bob', marks: 38 },
+        { name: 'Alice', marks: 85 }
+        ]
+        function greaterMarks (student) {
+            return student.marks > 50
+
+        }
+        function getName(student){
+            console.log(student.name)
+        }
+        function studentArr(studentarr){
+            const studentss = studentarr.filter(greaterMarks)
+            studentss.forEach(getName)
+        }
+        studentArr(students)
+    </script> 
+//-------------Anonyomous function--------------------
+    <script>
+        const students1 = [
+        { name: 'John', marks: 45 },
+        { name: 'Jane', marks: 72 },
+        { name: 'Bob', marks: 38 },
+        { name: 'Alice', marks: 85 }
+    ]
+    const greaterMarkss = function(student) {
+        return student.marks > 50;
+    }
+    const getNames = function(student) {
+        console.log(student.name);
+    }
+    const studentArr1 =function (studentarr) {
+        const studentss= studentarr.filter(greaterMarkss); 
+        studentss.forEach(getNames); 
+    }
+    studentArr1(students); 
+    </script>
+//-------------Arrow function--------------------
+    <script>
+         const students2 = [
+        { name: 'John', marks: 45 },
+        { name: 'Jane', marks: 72 },
+        { name: 'Bob', marks: 38 },
+        { name: 'Alice', marks: 85 }
+    ]
+    const greaterMarks1 = (student) => student.marks > 50; 
+     const getName1 = (student) => console.log(student.name); 
+    const studentArr2=(studentsarr1) => {
+            const studentss1 = studentsarr1.filter(greaterMarks1); 
+            studentss1.forEach(getName1); 
+        }
+        studentArr2(students);
+            
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+//---------------Named function--------------------
+    <script>
+        const numbers=[1,2,3,4,5]
+        function double(element){
+            console.log(element * 2);
+            
+        }
+        numbers.forEach(double)
+    </script>
+//-------------Anonyomous function----------------
+    <script>
+        const number =  [1,2,3,4,5]
+        number.forEach(function (element){
+        console.log(element * 2)
+       })
+    </script>
+//-------------Arrow function--------------------
+    <script>
+        const numbers1=[1,2,3,4,5]
+        numbers1.forEach(element =>  console.log(element  * 2))
+    </script>
+</body>
+</html>
